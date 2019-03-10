@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    background: #525252;
 }
 
 .menu-icon {
@@ -146,4 +145,55 @@ body {
 
 .firstsec {
     border-radius: 50%;
+}
+
+figure {
+    width: 200px;
+    margin: 0;
+    border: 2px solid #777;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+figure img {
+    width: 100%;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+figure figcaption {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 8px 4px;
+    cursor: pointer;
+}
+
+figure img:hover {
+    opacity: 1;
+}
+
+figure figcaption:hover {
+    opacity: 1;
+}
+
+.gallery {
+    position: relative;
+    display: flex;
+    width: 900px;
+    margin: auto;
+    justify-content: space-between;
+    top: 250px;
+    z-index: -1;
+}
+
+.gallery2 {
+    position: relative;
+    display: flex;
+    width: 900px;
+    margin: auto;
+    justify-content: center;
+    top: 300px;
+    z-index: -1;
 }
