@@ -32,8 +32,9 @@ body {
     top: 205px;
     left: -200px;
     width: 200px;
-    height: 37vh;
-    background: url("../images/hkbk.PNG");
+    height: 50vh;
+    /*background: url("../images/hkbk.PNG");*/
+    background-image: linear-gradient(green, white);
     transition: .5s;
     text-align: center;
     box-sizing: border-box;
@@ -43,6 +44,10 @@ body {
     border-bottom-left-radius: 30px;
     background-repeat: repeat;
     opacity: 0.7;
+}
+
+.logo {
+    top: 100px;
 }
 
 .sidebar.active {
@@ -300,4 +305,11 @@ footer {
     text-align: center;
     justify-content: center;
     left: 900px;
+}
+
+.container {
+    position: absolute;
+    left: 450px;
+    top: 250px;
+    justify-content: center;
 }
