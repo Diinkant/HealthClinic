@@ -1,6 +1,9 @@
 body {
     margin: 0;
     padding: 0;
+    background-image: linear-gradient(green, white);
+    height: 1000px;
+    background-repeat: no-repeat;
 }
 
 .menu-icon {
@@ -29,7 +32,7 @@ body {
     top: 205px;
     left: -200px;
     width: 200px;
-    height: 30vh;
+    height: 37vh;
     background: url("../images/hkbk.PNG");
     transition: .5s;
     text-align: center;
@@ -97,7 +100,7 @@ body {
     padding: 0;
     position: absolute;
     bottom: 30px;
-    left: 0;
+    left: 30px;
     display: flex;
     width: 100%;
     padding: 0 20px;
@@ -126,60 +129,175 @@ body {
     background: #fc2827;
 }
 
-figure {
-    width: 200px;
-    margin: 0;
-    border: 2px solid #777;
-    padding: 8px;
-    box-sizing: border-box;
-}
-
-figure img {
-    width: 100%;
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-figure figcaption {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: sans-serif;
-    font-size: 18px;
-    padding: 8px 4px;
-    cursor: pointer;
-}
-
-figure img:hover {
-    opacity: 1;
-}
-
-figure figcaption:hover {
-    opacity: 1;
-}
-
-.gallery {
-    position: relative;
-    display: flex;
-    width: 900px;
-    margin: auto;
-    justify-content: space-between;
-    top: 250px;
-    z-index: -1;
-}
-
-.gallery2 {
-    position: relative;
-    display: flex;
-    width: 900px;
-    margin: auto;
-    justify-content: center;
-    top: 300px;
-    z-index: -1;
-}
-
 .header-background {
     background: url("../images/new.png");
     height: 198px;
     width: 100%;
     background-size: cover;
+}
+
+.container1 {
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.5;
+    border: 2px dotted black;
+    padding: 6px;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 125%;
+}
+
+.container1:hover {
+    opacity: 1;
+}
+
+.container2 {
+    position: absolute;
+    top: 300px;
+    left: 800px;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.5;
+    border: 2px dotted black;
+    padding: 6px;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 125%;
+}
+
+.container2:hover {
+    opacity: 1;
+}
+
+.container3 {
+    position: absolute;
+    top: 300px;
+    left: 1200px;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.5;
+    border: 2px dotted black;
+    padding: 6px;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 125%;
+}
+
+.container3:hover {
+    opacity: 1;
+}
+
+.container4 {
+    position: absolute;
+    top: 602px;
+    left: 600px;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.5;
+    border: 2px dotted black;
+    padding: 6px;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 125%;
+}
+
+.container4:hover {
+    opacity: 1;
+}
+
+.container5 {
+    position: absolute;
+    top: 602px;
+    left: 1000px;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.5;
+    border: 2px dotted black;
+    padding: 6px;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 125%;
+}
+
+.container5:hover {
+    opacity: 1;
+}
+
+.img1 {
+    position: absolute;
+    border-radius: 2px;
+    box-shadow: 0 0 5px #343436;
+    filter: brightness(1.1);
+    height: 150px;
+    width: 200px;
+    right: 10px;
+}
+
+.img1:target {
+    height: 450px;
+    width: 500px;
+}
+
+.img1:target+.close {
+    display: block;
+}
+
+.img1:target+.close+.expand {
+    display: none;
+}
+
+.close {
+    background-image: url(https://bit.ly/29QeT21);
+    background-repeat: no-repeat;
+    display: none;
+    height: 32px;
+    right: 20px;
+    margin-top: -32px;
+    position: absolute;
+    width: 32px;
+    bottom: 715px;
+}
+
+.expand {
+    bottom: 740px;
+    margin-left: -32px;
+    margin-right: 16px;
+    pointer-events: none;
+    position: absolute;
+    right: 5px;
+}
+
+#wrapper {
+    margin: auto;
+    padding: 10px;
+    right: 0px;
+    width: 500px;
+}
+
+footer {
+    display: flex;
+    color: black;
+    bottom: 0px;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    left: 900px;
 }
